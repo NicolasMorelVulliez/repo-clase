@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./style/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>FOTOS DE GATOS</h1>
+    <section class="padreGrid">
+        <div class="hijo1">
+            <img src="https://placekitten.com/312" alt="">
+            <h3>gato1</h3>
+        </div>
+        <div class="hijo2">
+            <img src="https://placekitten.com/123" alt="">
+            <h3>gato2</h3>
+        </div>
+        <div class="hijo3">
+            <img src="https://placekitten.com/251" alt="">
+            <h3>gato3</h3>
+        </div>
+        <div class="hijo4">
+            <img src="https://placekitten.com/124" alt="">
+            <h3>gato4</h3>
+        </div>
+        <div class="hijo5">
+            <img src="https://placekitten.com/312" alt="">
+            <h3>gato5</h3>
+
+        </div>
+
+    </section>
+    
+</body>
+</html>
+
+
+https://placekitten.com/214
+
+<!--GRID 1
+    
+    <div class="grilla">
+    <header class="border">Header</header>
+    <section class="border productos gatitosFlex">
+        <article>
+            <img src="https://placekitten.com/200" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere pariatur possimus non facilis doloremque odio dignissimos autem praesentium, aperiam perspiciatis! Aliquid ipsum laborum corporis soluta repellat nam at earum quam!</p>
+        </article>
+        <article>
+            <img src="https://placekitten.com/200" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere pariatur possimus non facilis doloremque odio dignissimos autem praesentium, aperiam perspiciatis! Aliquid ipsum laborum corporis soluta repellat nam at earum quam!</p>
+        </article>
+        <article>
+            <img src="https://placekitten.com/200" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere pariatur possimus non facilis doloremque odio dignissimos autem praesentium, aperiam perspiciatis! Aliquid ipsum laborum corporis soluta repellat nam at earum quam!</p>
+        </article>
+    </section>
+    <section class="border servicios">Servicios</section>
+    <nav class="border">Navegacion</nav>
+    <aside class="border">Aside</aside>
+    <footer class="border">Pie de Pagina</footer>
+</div> 
+
+CSS
+.grilla{
+    width: 100%;
+    height: 100vh;
+}
+
+.border{
+    border: 5px solid black;
+}
+header{
+    grid-area: header;
+}
+.productos{
+    grid-area: productos;
+}
+nav{
+    grid-area: nav;
+}
+aside{
+    grid-area: publicidad;
+}
+
+footer{
+   grid-area: footer ;
+}
+
+.grilla{
+    display: grid;
+    grid-template-areas: 
+    "nav header    header"
+    "nav productos publicidad"
+    "nav servicios publicidad"
+    "nav footer    footer";
+    grid-template-columns: 20% auto 15%;
+    grid-template-rows: 100px 2fr 2fr 100px;
+    gap: 10px;
+
+}
+body{
+    height: 100vh;
+}
+.gatitosFlex{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+
+}

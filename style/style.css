@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.padreGrid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) ;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+    "hijo1 hijo2 hijo2"
+    "hijo3 hijo3 hijo3"
+    "hijo4 hijo4 hijo5";
+}
+
+.hijo1{
+    grid-area: hijo1;
+}
+.hijo2{
+    grid-area: hijo2
+}
+.hijo3{
+    grid-area: hijo3;
+}
+.hijo4{
+    grid-area: hijo4;
+}
+.hijo5{
+    grid-area: hijo5;
+}
+
+@media screen and (max-width: 576px) {
+    .padreGrid{
+        grid-template-columns: 90vw;
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-areas:
+        "hijo1"  
+        "hijo2"
+        "hijo3" 
+        "hijo4"
+        "hijo5 ";
+    }
+
+}
+
+
